@@ -1,8 +1,8 @@
 ---
-title: Counter
+title: Bootcamp
 ---
 
-# Counter APP
+# Wakacyjny kurs programowania HTML, CSS
 
 ## Numero Uno
 

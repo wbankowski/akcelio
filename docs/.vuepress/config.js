@@ -1,22 +1,24 @@
 module.exports = {
-  title: "Akcel.io",
-  description: "MEVN stack development",
+  title: "Akcelio Academy",
+  description: "Web Developer - Wakacyjny Bootcamp Programistyczny",
   themeConfig: {
     nav: [
-      { text: "COUNTER", link: "/counter/" },
-      { text: "GUIDE", link: "/guide/" }
-    ],
-    sidebar: [
+      { text: "BOOTCAMP", link: "/bootcamp/" },
+      { text: "PROGRAM", link: "/program/" },
+      { text: "LOKALIZACJA", link: "/lokalizacja/" },
+      { text: "KONTAKT", link: "/kontakt/" }
+    ]
+    /* sidebar: [
       {
-        title: "Counter",
-        collapsable: false,
-        children: ["/counter/counter-app"]
+        title: "Bootcamp",
+        collapsable: true,
+        children: ["/bootcamp/counter-app"]
       },
       {
-        title: "API Guide",
-        collapsable: false,
-        children: ["/guide/guide", "/guide/api"]
+        title: "Program",
+        collapsable: true,
+        children: ["/program/guide", "/program/api"]
       }
-    ]
+    ] */
   }
 };
