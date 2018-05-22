@@ -1,0 +1,25 @@
+{
+  "name": "akcelio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wbankowski/akcelio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wbankowski/akcelio/issues"
+  },
+  "homepage": "https://github.com/wbankowski/akcelio#readme",
+  "devDependencies": {
+    "vuepress": "^0.8.4"
+  }
+}
