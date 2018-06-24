@@ -3,9 +3,9 @@ module.exports = {
   description: "JavaScript and Vue.js development",
   themeConfig: {
     nav: [
-      { text: "BOOTCAMP", link: "/bootcamp/" },
-      { text: "PROGRAM", link: "/program/" },
-      { text: "LOKALIZACJA", link: "/lokalizacja/" },
+      { text: "HTML&CSS", link: "/htmlcss/" },
+      { text: "JAVASCRIPT", link: "/javascript/" },
+      { text: "VUE", link: "/vue/" },
       { text: "KONTAKT", link: "/kontakt/" }
     ]
     /* sidebar: [
