@@ -1,6 +1,6 @@
 module.exports = {
-  title: "Akcelio Academy",
-  description: "Web Developer - Wakacyjny Bootcamp Programistyczny",
+  title: "Akcel.io - JavaScript and Vue.js development",
+  description: "Web Development",
   themeConfig: {
     nav: [
       { text: "BOOTCAMP", link: "/bootcamp/" },
