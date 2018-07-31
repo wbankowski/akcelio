@@ -8,7 +8,7 @@
 
 <style scoped>
 .header {
-  background-color: greenyellow;
+  background-color: #cfa809;
   height: 100px;
 }
 
