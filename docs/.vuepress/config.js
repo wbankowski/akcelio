@@ -55,7 +55,7 @@ module.exports = {
   title: "Akcel.io",
   description:
     "MEVN (MongoDB, Express.js, Vue.js, Node.js) Full-Stack Web Developer",
-  ga: "",
+  ga: "UA-28060063-4",
   head: [
     [
       "link",
