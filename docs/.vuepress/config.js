@@ -66,7 +66,7 @@ module.exports = {
     ]
   ],
   themeConfig: {
-    lastUpdated: "Ostatnia aktualizacja",
+    //lastUpdated: "Ostatnia aktualizacja",
     repo: "",
     nav: [
       { text: "TECHBLOG", link: "/techblog/" },

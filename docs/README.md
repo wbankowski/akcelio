@@ -1,15 +1,15 @@
 ---
 home: true
-heroImage: 
+heroImage:
 actionText: TechBlog →
 actionLink: /techblog/
 features:
-- title: Stack
-  details: 
-- title: Projects
-  details: ????
-- title: Offer
-  details: ????
+# - title: Stack
+#   details:
+# - title: Projects
+#   details: ????
+# - title: Offer
+#   details: ????
 footer: Copyright © 2018 Wojciech Bańkowski (Akcel.io)
 ---
 
