@@ -3,13 +3,10 @@ const glob = require("glob");
 const { readFileSync } = require("fs");
 const fm = require("front-matter");
 
-// Set your blog directory where you will put all your blog posts
-const blogDirectory = "/techblog";
-
 const generateSideBar = directory => {
   const structure = {};
   // Set the blog directory path to read from
-  const directoryPath = join(__dirname, "..", blogDirectory);
+  const directoryPath = join(__dirname, "..", directory); /*?*/
   // Make an array of files from the blog directory and ignore README.md
   glob
     .sync("**/*.md", {
@@ -39,12 +36,8 @@ const generateSideBar = directory => {
       const names = Object.values(structure[cat]).sort();
       return {
         title: cat,
-        collapsable: true,
-        children: [].concat(
-          ...names.map(name => {
-            return name;
-          })
-        )
+        collapsable: false,
+        children: Array.from(names)
       };
     })
   ];
@@ -53,8 +46,7 @@ const generateSideBar = directory => {
 
 module.exports = {
   title: "Akcel.io",
-  description:
-    "MEVN (MongoDB, Express.js, Vue.js, Node.js) Full-Stack Web Developer",
+  description: "MEVN (MongoDB, Express.js, Vue.js, Node.js)",
   ga: "UA-28060063-4",
   head: [
     [
@@ -67,13 +59,11 @@ module.exports = {
   ],
   themeConfig: {
     //lastUpdated: "Ostatnia aktualizacja",
-    repo: "",
-    nav: [
-      { text: "TECHBLOG", link: "/techblog/" },
-      { text: "KONTAKT", link: "/kontakt/" }
-    ],
+    repo: "wbankowski/akcelio",
+    repoLabel: "GitHub",
+    nav: [{ text: "Blog", link: "/blog/" }],
     sidebar: {
-      "/techblog/": ["", ...generateSideBar(blogDirectory)]
+      "/blog/": ["", ...generateSideBar("/blog")]
     },
     sidebarDepth: 0
   },
