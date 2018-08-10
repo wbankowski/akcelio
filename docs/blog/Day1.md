@@ -142,5 +142,16 @@ module.exports = {
 
 Zapisujemy nasz plik `config.js` i możemy się cieszyć z automatycznie tworzonego menu bocznego na podstawie kategorii posta umieszczonej w sekcji Front Matter poszczególnych plików .md
 
-Jak zobaczycie mamy już możliwość kliknięcia i otworzenia z menu bocznego poszczególne posty przyporządkowane do kategorii. Jeśli zaś wejdziemy poprzez menu główne na stronę **_Blog_** otworzy nam się pusta strona pliku README.md, który umieściliśmy w katalogu `/blog/`. Chciałbym żeby na tej stronie pojawiała się w formie grida z kafelek lista wszystkich postów uporządkowana wg daty (na górze najświeższe). Kafelka będzie zawierać tytuł posta, kategorię, datę oraz krótkie streszczenie. Korzystać będę z komponentu Vue, który wcześniej utworzę i następnie umieszczę w pliku `/blog/README.md`.
+### Uruchomienie serwera deweloperskiego (hot reload)
+
+Teraz gdy już mamy stworzoną strukturę naszego bloga, napisany skrypt konfiguracyjny, stworzone menu boczne z kategoriami to powinniśmy zobaczyć efekt naszej pracy. Potrzebujemy do tego serwera deweloperskiego, który dostarcza na VuePress. Co ciekawę mamy od razu zapewniony tzw. hot reload, czyli po dokonaniu zmian w kodzie i zapisaniu naszego pliku serwer automatycznie renderuje na nowo treść strony dzięki czemu widzimy efekty zmian bez konieczności przeładowywania strony w przeglądarce. Uruchamiamy zatem Terminal i wpisujemy:
+
+```bash
+vuepress dev docs
+```
+
+Po chwili otrzymujemy komunikat tego rodzaju:
+`> VuePress dev server listening at http://localhost:8080/`
+
+Uruchamiamy przeglądarkę wpisując wyżej podany adres localhost i numer portu. Jak zobaczycie mamy już możliwość kliknięcia i otworzenia z menu bocznego poszczególne posty przyporządkowane do kategorii. Jeśli zaś wejdziemy poprzez menu główne na stronę **_Blog_** otworzy nam się pusta strona pliku `README.md`, który umieściliśmy w katalogu `/blog/`. Chciałbym żeby na tej stronie pojawiała się w formie grida z kafelek lista wszystkich postów uporządkowana wg daty (na górze najświeższe). Kafelka będzie zawierać tytuł posta, kategorię, datę oraz krótkie streszczenie. Korzystać będę z komponentu Vue, który wcześniej utworzę i następnie umieszczę w pliku `/blog/README.md`.
 Tym zajmę się w kolejnym dniu.
