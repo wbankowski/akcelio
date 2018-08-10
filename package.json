@@ -26,6 +26,7 @@
   "dependencies": {
     "front-matter": "^2.3.0",
     "markdown-it-deflist": "^2.0.3",
+    "vuetify": "^1.1.10",
     "webpack-serve": "^2.0.2"
   }
 }

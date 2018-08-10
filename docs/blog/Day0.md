@@ -1,7 +1,7 @@
 ---
 title: Day 0 - 100 Days of Code Challenge
 category: 100 Days Of Code
-date: 2018-08-07
+date: 2018-08-08
 description: My public commitment to 100 Days Of Code Challenge.
 ---
 
