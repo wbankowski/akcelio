@@ -1,8 +1,8 @@
 ---
-title: Blog - strona główna
+title: All Posts
 index: true
 prev: false
 next: false
 ---
-Tutaj będzie grid kafelek z wszystkimi postami
-<!-- <BlogList/> -->
+
+<BlogList/>

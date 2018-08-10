@@ -5,8 +5,8 @@
             <router-link :to="post.path">{{ post.frontmatter.title }}</router-link>
         </h2>
 
-        <p> {{ post.frontmatter.category }} </p>
-        <span> {{ post.frontmatter.description }} </span>
+        <p> Category: {{ post.frontmatter.category }} </p>
+        <span> Description: {{ post.frontmatter.description }} </span>
 
     </div>
 </div>
