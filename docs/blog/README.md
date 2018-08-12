@@ -5,4 +5,4 @@ prev: false
 next: false
 ---
 
-<BlogList/>
+<BlogList />

@@ -6,7 +6,7 @@ const fm = require("front-matter");
 const generateSideBar = directory => {
   const structure = {};
   // Set the blog directory path to read from
-  const directoryPath = join(__dirname, "..", directory); /*?*/
+  const directoryPath = join(__dirname, "..", directory);
   // Make an array of files from the blog directory and ignore README.md
   glob
     .sync("**/*.md", {
@@ -20,10 +20,11 @@ const generateSideBar = directory => {
       // Create blog directory path of each file
       const rel = join(directory, basename(filename));
       // Assign front matter attributes (title & category) to array of variables
-      const [title, category] = Object.values(frontmatter);
+      const [title, category, draft] = Object.values(frontmatter);
       // Add the blog directory path and return array of it
-      return [rel, title, category];
+      return [rel, title, category, draft];
     })
+    .filter(p => p[3] === false) /*?*/
     .forEach(([rel, title, category]) => {
       structure[category] = {
         ...structure[category],
@@ -36,7 +37,7 @@ const generateSideBar = directory => {
       const names = Object.values(structure[cat]).sort();
       return {
         title: cat,
-        collapsable: false,
+        collapsable: true,
         children: Array.from(names)
       };
     })

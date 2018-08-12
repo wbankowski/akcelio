@@ -1,6 +1,7 @@
 ---
-title: Day 1 - VuePress as a blog engine - Part 1
+title: VuePress as a blog engine - Part 1
 category: 100 Days Of Code
+draft: false
 date: 2018-08-09
 description: VuePress + some JavaScript and we have got a blog platform.
 ---

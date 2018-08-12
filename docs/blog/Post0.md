@@ -1,6 +1,7 @@
 ---
-title: Day 0 - 100 Days of Code Challenge
+title: 100 Days of Code Challenge - Public Commitment
 category: 100 Days Of Code
+draft: false
 date: 2018-08-08
 description: My public commitment to 100 Days Of Code Challenge.
 ---

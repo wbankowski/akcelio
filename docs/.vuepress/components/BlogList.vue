@@ -1,5 +1,5 @@
 <template>
-  <v-flex xs12 md5 offset-md2>
+  <v-flex row>
     <div v-for="post in posts" :key="post.title">
       <v-card class="my-3" hover>
         <v-card-media
