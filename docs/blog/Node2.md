@@ -1,9 +1,9 @@
 ---
-title: 2. How come when you declare a global variable in any Node.js file it’s not really global to all modules?
+title: How come when you declare a global variable in any Node.js file it’s not really global to all modules?
 category: The Node.js knowledge (Q&A)
 draft: false
 date: 2018-08-12
-description: To be answered soon
+description: Node.js
 ---
 
 **The module wrapper**
