@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <div v-for="post in posts" :key="post.title">
-      <span><router-link :to="post.path"> {{ post.frontmatter.title }} </router-link></span>
-      <p> {{ post.frontmatter.category }} </p>
-      <hr>
-    </div>
-  </div>
+<div class="bloglist">
+<div v-for="post in posts" :key="post.title">
+  <h1><router-link :to="post.path"> {{ post.frontmatter.title }} </router-link></h1>
+  <p class="title"> {{ post.frontmatter.category }} </p>
+  <hr>
+</div>
+</div>
 </template>
 
 <script>
@@ -26,3 +26,16 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+h1 {
+  font-size: 1.2em;
+}
+p {
+  font-size: 0.8em;
+}
+router-link:hover {
+  text-decoration: none;
+}
+</style>
+
